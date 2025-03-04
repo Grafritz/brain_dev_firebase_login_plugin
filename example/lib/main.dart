@@ -1,8 +1,11 @@
+import 'package:brain_dev_firebase_login/config/routes/route_helper.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:brain_dev_firebase_login/brain_dev_firebase_login.dart';
+import 'package:brain_dev_tools/tools/my_elevated_button.dart';
+import 'package:brain_dev_tools/tools/constant.dart';
 
 void main() {
   runApp(const MyApp());
@@ -54,8 +57,37 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: const Text('Plugin example app'),
         ),
-        body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+        body: ListView(
+          children: [
+            MyElevatedButton(
+                onPressed: (){
+                  RouteHelperAuth.navLoginPage();
+                },
+                child: Text('navLoginPage')
+            ),
+            MyElevatedButton(
+                onPressed: (){
+                  RouteHelperAuth.navigateLoginPage();
+                },
+                child: Text('navigate LoginPage')
+            ),
+            MyElevatedButton(
+                onPressed: (){
+                  RouteHelperAuth.navigateToInformationScreen(Constant.privacy_policy);
+                },
+                child: Text('navigateTo InformationScreen')
+            ),
+            MyElevatedButton(
+                onPressed: (){
+                  RouteHelperAuth.navProfileScreen(userId: '');
+                },
+                child: Text('navProfileScreen')
+            ),
+
+            Center(
+              child: Text('Running on: $_platformVersion\n'),
+            ),
+          ],
         ),
       ),
     );
