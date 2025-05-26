@@ -1,6 +1,6 @@
 name: brain_dev_firebase_login
 description: "Package project for login with firebase."
-version: 1.0.5
+version: 1.0.6
 homepage: https://github.com/Grafritz/brain_dev_firebase_login_plugin.git
 
 #  dart pub publish --dry-run   #// Vérifier avant chaque nouvelle version
@@ -22,22 +22,22 @@ dependencies:
 
   # Android, iOS, MacOS, Web #Conf
   # Run : firebase login | dart pub global activate flutterfire_cli | flutterfire configure
-  firebase_core: ^3.12.1
-  firebase_auth: ^5.5.1
+  firebase_core: ^3.13.1
+  firebase_auth: ^5.5.4
   #flutter_facebook_auth: ^6.2.0 #7.1.0 #TO.DO: cd ios && pod update flutter_facebook_auth
-  google_sign_in: ^6.2.2
-  sign_in_with_apple: ^6.1.4
+  google_sign_in: ^6.3.0
+  sign_in_with_apple: ^7.0.1
   sign_button: ^2.0.6
 
-  device_info_plus: ^11.3.2 # A cause Plugin
+  device_info_plus: ^11.4.0 # A cause Plugin
   flutter_widget_from_html_core: ^0.16.0  # A cause Plugin
   get: ^4.7.2 # A cause Plugin
-  shared_preferences: ^2.5.2 # A cause Plugin
+  shared_preferences: ^2.5.3 # A cause Plugin
   uuid: ^4.5.1 # A cause Plugin
 
   # rm -rf ~/.pub-cache/git
-  brain_dev_tools: ^1.0.5
-  brain_dev_business: ^1.0.5
+  brain_dev_tools: ^1.0.6
+  brain_dev_business: ^1.0.6
 
 
 dev_dependencies:
