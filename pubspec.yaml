@@ -1,6 +1,6 @@
 name: brain_dev_firebase_login
 description: "Package project for login with firebase."
-version: 1.0.6
+version: 1.0.8
 homepage: https://github.com/Grafritz/brain_dev_firebase_login_plugin.git
 
 #  dart pub publish --dry-run   #// Vérifier avant chaque nouvelle version
@@ -36,14 +36,18 @@ dependencies:
   uuid: ^4.5.1 # A cause Plugin
 
   # rm -rf ~/.pub-cache/git
-  brain_dev_tools: ^1.0.6
-  brain_dev_business: ^1.0.6
+  # clear && flutter clean && rm -rf ~/.pub-cache/git && flutter pub get
+  brain_dev_tools: ^1.0.8
+    #path: /Users/jeanfritzduverseau/_Travaux/Projects/Flutter_Plugins/brain_dev_tools_plugin
+
+  brain_dev_business: ^1.0.8
+    #path: /Users/jeanfritzduverseau/_Travaux/Projects/Flutter_Plugins/brain_dev_business_plugin
 
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^5.0.0
+  flutter_lints: ^6.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
